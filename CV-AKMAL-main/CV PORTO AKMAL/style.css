@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+
+/* HOME */
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #eff4fd;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    /* width: 100%; */
+    margin: auto;
+    padding: 20px 70px;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #eff4fd;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: rgb(0, 60, 255);
+}
+
+.information{
+    margin-left: 8%;
+    margin-top: 10%;
+}
+
+.information h1{
+    font-size: 50px;
+    color: #212121;
+    margin-bottom: 20px;
+}
+
+.information span {
+    color: rgb(0, 60, 255);
+}
+
+.information p{
+    color: #555;
+    line-height: 22px;
+}
+
+.icons{
+    margin-left: 8%;
+    margin-top: 2%;
+    display: flex;
+    position: absolute;
+    
+}
+
+.icons a{
+    position: relative;
+    display: block;
+    font-size: 25px;
+    color: #000;
+}
+
+
+.fa-instagram, .fa-tiktok, .fa-youtube {
+    margin-left: 35px;
+}
+
+
+/* .information a{
+    background:rgb(0, 60, 255);
+    padding: 15px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 50px;
+} */
+
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.images:hover .shape{
+    bottom: 40px;
+}
+
+.images:hover .akmal{
+    left: 45%;
+}
+
+
+/* ABOUT ME */
+.profil-container {
+    width: 80%;
+    /* height: 100vh; */
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.profil {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profil img {
+    margin-left: 50px;
+}
+
+.about {
+    width: 60%;
+    max-width: 300px;
+}
+
+.contact {
+    padding: 50px 20px;
+    background: #fff;
+}
+
+.profil-text {
+    width: 60%;
+}
+
+.profil-text h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #212121;
+}
+
+.profil-text p {
+    line-height: 1.6;
+}
+
+.about-profil{
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.education {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.edu-item {
+    background-color: #eff4fd;
+    padding: 15px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.edu-item h3 {
+    font-size: 20px;
+    color: #212121;
+    margin-bottom: 5px;
+}
+
+.edu-item p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.edu-item span {
+    font-size: 14px;
+    color: #6c63ff;
+    font-weight: bold;
+}
+
+/* PROJECT */
+.Project-title{
+    text-align: center;
+}
+
+.Project {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px; /* Batasi lebar total grid */
+    margin: 0 auto; /* Rata tengah */
+  }
+  
+  .Project-items { 
+    max-width: 250px; /* Atur lebar maksimal per kotak */
+    width: 100%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    margin: 0 auto; /* Biar kotaknya rata tengah di kolom */
+  }
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: rgb(0, 60, 255);
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: rgb(0, 40, 180);
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 20px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Card Container */
+.content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Individual Card */
+.card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 10px 10px 30px #ccc, -10px -10px 30px #fff; /* Neumorphism effect */
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Icon Style */
+.icon {
+    font-size: 50px;
+    color: blue;
+    margin-bottom: 15px;
+}
+
+/* Info Text */
+.info h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.info p a {
+    font-size: 14px;
+    font-style: italic;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.info p a:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER */
+.footer {
+    background-color: white;
+    color: blu;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-title {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.footer-title span {
+    color: #3a6cf4;
+}
+
+.footer-title span:hover {
+    color: #0a49f6;
+}
+
+.footer .social-icons a {
+    font-size: 1.3em;
+    padding: 0 12px 0 0;
+}
+
+  
